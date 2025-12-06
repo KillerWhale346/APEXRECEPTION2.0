@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apex Reception – Features</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Explore the full Apex Reception feature suite: AI call answering, appointment booking, lead capture, and more."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../">
+          <div class="brand-mark">
+            <img src="../images/apex-logo-mark.png" alt="Apex Reception logo" />
+          </div>
+          <div>
+            <div class="brand-text-primary">Apex Reception</div>
+            <div class="brand-text-secondary">AI Reception Suite</div>
+          </div>
+        </a>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a class="nav-link" href="../">Home</a>
+            <a class="nav-link active" href="../features/">Features</a>
+            <a class="nav-link" href="../pricing/">Pricing</a>
+            <a class="nav-link" href="../book/">Book Appointment</a>
+            <a class="nav-link" href="../contact/">Contact</a>
+          </div>
+          <a class="nav-cta" href="../book/">Talk to our team →</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="site-wrapper">
+        <section class="section">
+          <div class="section-header">
+            <div class="section-kicker">Feature overview</div>
+            <h1 class="section-title">Everything your front desk should do — on autopilot.</h1>
+            <p class="section-subtitle">
+              Apex Reception combines AI conversation, call routing, scheduling, and lead capture
+              into one unified reception layer that can sit in front of a single phone number or
+              your entire operation.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="feature-icon">☎</div>
+              <h3>Instant call answering</h3>
+              <p>
+                Pick up every call in under two rings with a branded greeting trained on your
+                scripts and FAQs.
+              </p>
+              <div class="feature-chip">• Multi-language support</div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">📞</div>
+              <h3>Smart call routing</h3>
+              <p>
+                Transfer callers to the right person based on intent, schedule, or priority —
+                including emergency rules.
+              </p>
+              <div class="feature-chip">• Custom routing trees</div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">📅</div>
+              <h3>Calendar-level booking</h3>
+              <p>
+                Direct integration with Google Calendar, Outlook or in-house tools so the AI can
+                book, reschedule and cancel.
+              </p>
+              <div class="feature-chip">• Double-booking protection</div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">💬</div>
+              <h3>Lead capture & CRM sync</h3>
+              <p>
+                Structured lead forms filled out automatically during each call, then synced into
+                your CRM or sent via email/slack.
+              </p>
+              <div class="feature-chip">• Custom fields per industry</div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">📨</div>
+              <h3>Text & email follow-up</h3>
+              <p>
+                Automatically send confirmations, directions, prep instructions, or quote
+                requests after a call ends.
+              </p>
+              <div class="feature-chip">• Template library included</div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">📊</div>
+              <h3>Live analytics</h3>
+              <p>
+                Track call volume, answer speed, bookings, and missed-call recovery in a simple
+                dashboard.
+              </p>
+              <div class="feature-chip">• Export to CSV</div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">🧠</div>
+              <h3>Custom training</h3>
+              <p>
+                Fine-tune how Apex speaks, what it can promise, and what requires a human
+                hand-off.
+              </p>
+              <div class="feature-chip">• Guardrails & approvals</div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">🛡</div>
+              <h3>Compliance & logging</h3>
+              <p>
+                Optional call recordings and transcripts with role-based access for your team.
+              </p>
+              <div class="feature-chip">• Audit-ready records</div>
+            </article>
+
+            <article class="feature-card">
+              <div class="feature-icon">🔌</div>
+              <h3>Integrations</h3>
+              <p>
+                Connect your phone provider, CRM, booking tools and internal systems to build a
+                full reception stack.
+              </p>
+              <div class="feature-chip">• Zapier & webhooks</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="form-card">
+            <div class="section-header">
+              <div class="section-kicker">See it live</div>
+              <h2 class="section-title">Want to test Apex on real scenarios?</h2>
+              <p class="section-subtitle">
+                Send us 3–5 sample calls or scripts and we’ll show you how Apex would respond,
+                including booking flows and follow-ups.
+              </p>
+            </div>
+            <a href="../book/" class="btn-primary">Book a walkthrough →</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Apex Reception. All rights reserved. · <a href="mailto:contact@apexreception.io">contact@apexreception.io</a></span>
+        <div class="footer-links">
+          <a href="../privacy/">Privacy</a>
+          <a href="../terms/">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
