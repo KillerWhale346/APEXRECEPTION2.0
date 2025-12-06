@@ -117,45 +117,83 @@ img {
   gap: 12px;
 }
 
-/* Logo combo */
+/* --- UPDATED LOGO: Bigger + Glow + Hover Animation --- */
 
 .brand {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
+  transform: scale(1.1);              /* slightly larger overall */
+  transition: transform 200ms ease-out;
 }
 
+.brand:hover {
+  transform: scale(1.16);             /* hover enlarge */
+}
+
+/* Logo circle */
 .brand-mark {
-  width: 34px;
-  height: 34px;
+  width: 48px;                         /* bigger */
+  height: 48px;                        /* bigger */
   border-radius: 999px;
-  background: radial-gradient(circle at 30% 20%, #38bdf8 0, #1d4ed8 55%, #020617 100%);
+  
+  background: radial-gradient(
+    circle at 40% 30%,
+    #3cbdf8 0%,
+    #1d4ed8 60%,
+    #0a0f18 100%
+  );
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.8), 0 10px 30px rgba(15, 23, 42, 0.75);
+
+  /* glow */
+  box-shadow:
+    0 0 12px rgba(56, 189, 248, 0.55),
+    0 0 22px rgba(56, 189, 248, 0.35),
+    0 0 40px rgba(56, 189, 248, 0.20);
+
   overflow: hidden;
+  transition: box-shadow 200ms ease, transform 180ms ease;
 }
 
+/* Glow on hover */
+.brand:hover .brand-mark {
+  box-shadow:
+    0 0 20px rgba(56, 189, 248, 0.75),
+    0 0 35px rgba(56, 189, 248, 0.55),
+    0 0 60px rgba(56, 189, 248, 0.35);
+  transform: scale(1.07);
+}
+
+/* Logo image inside */
 .brand-mark img {
-  width: 26px;
-  height: 26px;
+  width: 54px;      /* increased */
+  height: 54px;     /* increased */
   object-fit: contain;
+  transform: translateY(1px); /* optical centering */
 }
 
+
+/* Brand name text */
 .brand-text-primary {
-  font-weight: 650;
-  font-size: 18px;
-  letter-spacing: 0.06em;
+  font-weight: 700;
+  font-size: 24px;                 /* bigger */
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
+/* Subtext */
 .brand-text-secondary {
-  font-size: 10px;
-  letter-spacing: 0.18em;
+  font-size: 12px;                 /* slightly bigger */
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--text-soft);
 }
+
+/* --- END LOGO UPDATE --- */
+
 
 /* Nav */
 
