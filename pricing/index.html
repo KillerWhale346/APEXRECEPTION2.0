@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Apex Reception – Pricing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Transparent pricing for Apex Reception. Use the slider to estimate your AI receptionist cost based on monthly call minutes."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../">
+          <div class="brand-mark">
+            <img src="../images/apex-logo-mark.png" alt="Apex Reception logo" />
+          </div>
+          <div>
+            <div class="brand-text-primary">Apex Reception</div>
+            <div class="brand-text-secondary">AI Reception Suite</div>
+          </div>
+        </a>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a class="nav-link" href="../">Home</a>
+            <a class="nav-link" href="../features/">Features</a>
+            <a class="nav-link active" href="../pricing/">Pricing</a>
+            <a class="nav-link" href="../book/">Book Appointment</a>
+            <a class="nav-link" href="../contact/">Contact</a>
+          </div>
+          <a class="nav-cta" href="../book/">Talk to our team →</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-transition">
+      <div class="site-wrapper">
+        <section class="section">
+          <div class="section-header">
+            <div class="section-kicker">Pricing</div>
+            <h1 class="section-title">Slide to match Apex to your call volume.</h1>
+            <p class="section-subtitle">
+              Move the slider to estimate your plan based on how many minutes you expect Apex to handle each month.
+              Every plan includes AI call answering, appointment booking and lead capture.
+            </p>
+          </div>
+
+          <div class="pricing-shell">
+            <div class="pricing-shell-inner">
+              <div>
+                <div class="pricing-slider-heading">
+                  <h2>Estimate your minutes</h2>
+                  <p>Most businesses start between 500–3,000 minutes per month. You can adjust or fine‑tune later.</p>
+                </div>
+
+                <div class="pricing-slider-control">
+                  <label for="minutesRange">Estimated AI-handled minutes per month</label>
+                  <div class="pricing-slider-value">
+                    <span id="minutesValue">1,500 mins / month</span>
+                    <span style="font-size: 11px; color: var(--text-soft)">Drag to update pricing</span>
+                  </div>
+                  <input
+                    type="range"
+                    id="minutesRange"
+                    class="pricing-range"
+                    min="250"
+                    max="11000"
+                    step="250"
+                    value="1500"
+                  />
+                  <div class="pricing-slider-scale">
+                    <span>0–500</span>
+                    <span>500–1.5k</span>
+                    <span>1.5k–3k</span>
+                    <span>3k–10k</span>
+                    <span>10k+</span>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="pricing-plan-panel">
+                <div class="pricing-plan-meta">
+                  <div class="plan-label" id="planLabel">Growth</div>
+                  <div class="plan-tag" id="planTag">High volume</div>
+                </div>
+                <h2 class="plan-title" id="planTitle">Multi-location</h2>
+                <div class="plan-price" id="planPrice">$699<span>/month</span></div>
+                <div class="plan-sub" id="planSub">
+                  Designed for busy operations taking calls all day across locations or departments.
+                </div>
+                <ul id="planFeatures">
+                  <li><span class="check">✔</span><span>Up to ~3,000 AI-handled minutes / month.</span></li>
+                  <li><span class="check">✔</span><span>Custom scripts per department and line.</span></li>
+                  <li><span class="check">✔</span><span>Deeper CRM / Zapier / webhook integrations.</span></li>
+                  <li><span class="check">✔</span><span>Priority onboarding & support.</span></li>
+                </ul>
+                <a href="../book/" class="btn-primary plan-cta" id="planCta">Talk about Growth</a>
+              </aside>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="form-card">
+            <div class="section-header">
+              <div class="section-kicker">Not sure where to start?</div>
+              <h2 class="section-title">We’ll map a plan to your real call data.</h2>
+              <p class="section-subtitle">
+                Share your approximate monthly minutes and how you handle calls today. We’ll come
+                back with a suggested plan, projected savings and a rollout timeline.
+              </p>
+            </div>
+            <a href="../book/" class="btn-primary">Get a custom quote →</a>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Apex Reception. All rights reserved. · <a href="mailto:contact@apexreception.io">contact@apexreception.io</a></span>
+        <div class="footer-links">
+          <a href="../privacy/">Privacy</a>
+          <a href="../terms/">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

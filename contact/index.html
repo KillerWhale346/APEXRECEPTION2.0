@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact – Apex Reception</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Contact the Apex Reception team for support, sales questions or partnership opportunities."
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../">
+          <div class="brand-mark">
+            <img src="../images/apex-logo-mark.png" alt="Apex Reception logo" />
+          </div>
+          <div>
+            <div class="brand-text-primary">Apex Reception</div>
+            <div class="brand-text-secondary">AI Reception Suite</div>
+          </div>
+        </a>
+        <nav class="nav">
+          <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span>
+          </button>
+          <div class="nav-links">
+            <a class="nav-link" href="../">Home</a>
+            <a class="nav-link" href="../features/">Features</a>
+            <a class="nav-link" href="../pricing/">Pricing</a>
+            <a class="nav-link" href="../book/">Book Appointment</a>
+            <a class="nav-link active" href="../contact/">Contact</a>
+          </div>
+          <a class="nav-cta" href="../book/">Talk to our team →</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-transition">
+      <div class="site-wrapper">
+        <section class="section">
+          <div class="section-header">
+            <div class="section-kicker">Contact</div>
+            <h1 class="section-title">We’re here to help.</h1>
+            <p class="section-subtitle">
+              Whether you’re ready to roll out Apex Reception or just exploring options, drop us
+              a note and we’ll get back quickly.
+            </p>
+          </div>
+
+          <div class="contact-layout">
+            <div class="form-card">
+              <form class="form-grid" action="https://example.com/contact" method="post">
+                <div class="form-field">
+                  <label for="name">Full name</label>
+                  <input id="name" name="name" type="text" required />
+                </div>
+                <div class="form-field">
+                  <label for="email">Work email</label>
+                  <input id="email" name="email" type="email" required />
+                </div>
+                <div class="form-field">
+                  <label for="topic">Topic</label>
+                  <select id="topic" name="topic">
+                    <option>Sales</option>
+                    <option>Support</option>
+                    <option>Partnership</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="company">Company</label>
+                  <input id="company" name="company" type="text" />
+                </div>
+                <div class="form-field" style="grid-column: 1 / -1">
+                  <label for="message">How can we help?</label>
+                  <textarea id="message" name="message" required></textarea>
+                </div>
+                <div style="grid-column: 1 / -1">
+                  <button type="submit" class="btn-primary">Send message</button>
+                </div>
+              </form>
+            </div>
+
+            <aside class="form-card">
+              <h3 style="margin-top: 0; margin-bottom: 10px">Quick details</h3>
+              <p style="margin-top: 0; font-size: 13px; color: var(--text-soft)">
+                Typical response time: <strong>under 1 business day</strong>.
+              </p>
+              <p style="font-size: 13px; color: var(--text-soft)">
+                Email: <strong>support@apexreception.com</strong><br />
+                Sales: <strong>sales@apexreception.com</strong>
+              </p>
+
+              <p style="font-size: 13px; color: var(--text-soft)">
+                Prefer to talk live? Use the “Book Appointment” page to lock in a quick call and
+                live product demo.
+              </p>
+            </aside>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <span>© <span id="year"></span> Apex Reception. All rights reserved. · <a href="mailto:contact@apexreception.io">contact@apexreception.io</a></span>
+        <div class="footer-links">
+          <a href="../privacy/">Privacy</a>
+          <a href="../terms/">Terms</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
